@@ -1,5 +1,6 @@
 <% if user_signed_in?  %>
-    <h2>Lets Start learning, <%= current_user.first_name %> </h2>
+    <%# Capitalising first letter %>
+    <h2>Lets Start learning, <%= current_user.first_name.to_s.humanize %> </h2>
     <div class="row">
         <div class="card " style="width: 18rem;">
             <img src="https://media.giphy.com/media/cIn5fTcjnKhStIeAef/giphy.gif" class="card-img-top" alt="...">
