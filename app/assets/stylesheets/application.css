@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+
+/* Generic Styles */
+h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 60px;
+    margin-bottom: 2%;
+}
+
+.btn-primary{
+    background-color: #28527a;
+    border-color: #28527a;
+}
+
+.btn-primary:hover{
+    background-color: #28527a;
+    border-color: #28527a;
+}
+/* Navbar styles */
+.navbar{
+    background-color: #28527a;
+}
+
+.navbar-brand{
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+}
+
+/* Login and signUp form styles */
+.login-form{
+    padding: 10% 0 10%;
+}
+
+.form{
+    box-shadow: 5px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+.brand{
+    font-family: 'Satisfy', cursive;
+    font-size: 60px;
+    margin-bottom: 2%;
+    color:#28527a;
+    text-align: center;
+}
+
+
+/* Footer section styles */
+
+footer{
+    background-color: #8ac4d0;
+}

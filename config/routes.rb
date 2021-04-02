@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   root to: 'home#index'
 
   # paths for dashboard
-  get 'dashboard_index', to: 'dashboard#index'
+  get "dashboard/index", to: 'dashboard#index'
 end
