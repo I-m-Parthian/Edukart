@@ -34,6 +34,17 @@ h1{
     background-color: #28527a;
     border-color: #28527a;
 }
+
+.btn-outline-primary{
+    color: #28527a;
+    border-color: #28527a;
+}
+
+.btn-outline-primary:hover{
+    background-color: #28527a;
+    color: white;
+    border-color: #28527a;
+}
 /* Navbar styles */
 .navbar{
     background-color: #28527a;
@@ -62,6 +73,13 @@ h1{
     margin-bottom: 2%;
     color:#28527a;
     text-align: center;
+}
+
+
+/* style images for view */
+.list-image{
+    height: 200px;
+    width: 350px;
 }
 
 
