@@ -21,6 +21,11 @@ h1{
     margin-bottom: 2%;
 }
 
+h2{
+    font-family: 'Zilla Slab', serif;
+    text-align: center;
+}
+
 .title{
     margin:3% 0;
 }
@@ -78,16 +83,26 @@ h1{
 
 /* style images for view */
 .list-image{
-    height: 200px;
-    width: 350px;
+    height: 50%;
+    width: 100%;
 }
 
+/* style single page view */
+.image-show{
+    height: 100px;
+    width: 100%;
+    background-color: #888888;
+}
 
 /* Footer section styles */
 
-footer{
+.footer{
+
     background-color: #8ac4d0;
     text-align: center;
     padding-top: 1%;
     padding-bottom: 3px;
+    min-height: 10px;
+    /* height:60px;   Height of the footer */
+    background:#8ac4d0;
 }

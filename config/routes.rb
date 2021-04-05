@@ -7,6 +7,4 @@ Rails.application.routes.draw do
   # path for home page
   root to: 'home#index'
 
-  # paths for dashboard
-  get "dashboard/index", to: 'dashboard#index'
 end

@@ -1,18 +1,141 @@
+<div class="row">
+  <%= image_tag @course.image_name, class: "image-show" %>
+</div>
+<h1 class="text-center mt-5"><%= @course.course_name %></h1>
 
-<p>
-  <strong>Course name:</strong>
-  <%= @course.course_name %>
-</p>
-
-<p>
-  <strong>Image name:</strong>
-  <%= image_tag @course.image_name %>
-</p>
-
-<p>
-  <strong>About file:</strong>
+<p class="text-center mb-5 justify-content text-muted">
   <%= @course.description %>
 </p>
 
-<%= link_to 'Edit', edit_course_path(@course) %> |
-<%= link_to 'Back', courses_path %>
+
+
+<%# Hard Coded Content %>
+
+<h2 id="html-and-css">HTML and CSS</h2>
+<p>Start with <a href="https://learn.shayhowe.com">Learn to Code HTML and CSS by Shay Howe</a></p>
+<p>In particular read the following sections and complete the exercises.</p>
+<h4 id="html-css">HTMl &amp; CSS</h4>
+<ul>
+<li>Lesson 1: Building your first web page</li>
+<li>Lesson 2: Getting to know HTML</li>
+<li>Lesson 3: Getting to know CSS</li>
+<li>Lesson 4: Opening the Box Model</li>
+<li>Lesson 5: Positioning content</li>
+</ul>
+<h4 id="advanced-html-css">Advanced HTML &amp; CSS</h4>
+<ul>
+<li>Lesson 3: Complex Selectors</li>
+<li>Lesson 4: Responsive Web Design</li>
+</ul>
+<h4 id="resources-for-flex-and-grid-layouts-">Resources for Flex and Grid Layouts:</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=JJSoEo8JSnc">CSS Flex Video</a></li>
+<li><a href="https://www.youtube.com/watch?v=jV8B24rSN5o">CSS Grid Video</a></li>
+</ul>
+<h4 id="resources-for-web-development-for-any-topic-">Resources for Web Development for any Topic:</h4>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/">Mozilla Web Docs</a></li>
+</ul>
+<h2 id="project-ii-portfolio-project">Project II: Portfolio project</h2>
+<h4 id="goal">Goal</h4>
+<p>Build your portfolio website using your knowledge of HTML and CSS. The display should work in all resolutions.</p>
+<p>Use your knowledge of responsive media queries, CSS flex, and CSS grid for handling multi-column layouts.</p>
+<h4 id="hosting">Hosting</h4>
+<p>Host your website on <a href="https://www.geeksforgeeks.org/how-to-deploy-a-basic-static-html-website-to-heroku/">Heroku</a>. The specifics will be discussed in class.</p>
+<h2 id="project-ii-themed-e-commerce-website">Project II: Themed E-Commerce Website</h2>
+<h4 id="goal">Goal</h4>
+<p>Recreate the following <a href="https://shop.polymer-project.org/">website</a>, but with a theme of your own. Example: a shoe store, clothing store, electronics store, etc.</p>
+<p><em>NOTE</em>: This project is on HTML/CSS only, do not attempt to add functionality with JS. That part will come later. You should only use JS if it needed for widgets of frameworks like bootstrap.</p>
+<h4 id="project-description">Project Description</h4>
+<p>The website should have 5 pages:</p>
+<ol>
+<li>Home Page</li>
+<li>Item listing page</li>
+<li>Single Item Page</li>
+<li>Cart Page (hard code the items in the cart)</li>
+<li>Checkout Page</li>
+</ol>
+<h4 id="some-pointers-">Some pointers:</h4>
+<ul>
+<li>Please work mobile-first.</li>
+<li>Use of a CSS framework like Bootstrap is encouraged but not required.</li>
+<li>Add README.md and .gitignore files to your repository.</li>
+<li>Make a common styles.css. Include it on each HTML page. Put the style classes here.They can be gradually reused.</li>
+<li>Work page by page, section by section, element by element. Break things down to the smallest step. Ask yourself what you don&#39;t know and figure it out.</li>
+<li>Try to work with high energy and complete things.</li>
+</ul>
+<h4 id="hosting">Hosting</h4>
+<p>Host your website on <a href="https://www.geeksforgeeks.org/how-to-deploy-a-basic-static-html-website-to-heroku/">Heroku</a>. The specifics will be discussed in class.</p>
+<h2 id="introduction-to-javasscript-and-its-ecosystem">Introduction to JavasScript and its ecosystem</h2>
+<h4 id="javascript-basics">JavaScript Basics</h4>
+<p><a href="https://in.udacity.com/course/intro-to-javascript--ud803">Introduction to JavaScript - Udacity</a></p>
+<h4 id="es6-basics">ES6 Basics</h4>
+<p><a href="https://www.udacity.com/course/es6-javascript-improved--ud356">Introduction to ES6 - Udacity</a></p>
+<h4 id="freecodecamp-optional-">freeCodeCamp [Optional]</h4>
+<p>If do not feel confident with JS yet or you want more prectice go ahead with the freeCodeCamp JS certification.</p>
+<p><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/">FreeCodeCamp Course</a></p>
+<h4 id="data-project-js-version">Data Project - JS Version</h4>
+<p><strong>Java Script Data Project 1</strong></p>
+<p>In this project, you will use the same raw data from the previous data project (IPL). There are 2 parts to the problem ...</p>
+<p><strong>Part 1: JSON generation [RUBY]</strong></p>
+<ul>
+<li><p>Write a ruby program that takes the CSV file(s) as input, computes the data required for plots, and writes a JSON file as output.</p>
+</li>
+<li><p><strong>IMPORTANT</strong> The output JSON file should not contain all the data from the CSV file, it should only contain data for plots.</p>
+</li>
+<li><p><strong>IMPORTANT</strong> the data structure of the json should be based on the data needed to plot, described in Part 2.</p>
+</li>
+</ul>
+<p><strong>Part 2: Plotting [JavaScript]</strong></p>
+<ul>
+<li>Write HTML/CSS/JS code to plot the data on the browser</li>
+<li>Use the HighCharts JavaScript Lib for plotting <a href="https://www.highcharts.com/demo">HighCharts Demos</a>.</li>
+<li>Serve the html, js and json files with ruby</li>
+</ul>
+<pre><code class="lang-sh">ruby -<span class="hljs-keyword">run</span><span class="bash"> -ehttpd . -p8000</span>
+</code></pre>
+<ul>
+<li>Use Fetch API on the Browser to get JSON data generated in Part 1 from the webserver <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">Browser Fetch API</a></li>
+</ul>
+<p><strong>Hosting</strong></p>
+<p>Host the HTML / JS / JSON along with your other HTML projects on Heroku.</p>
+<h2 id="node-js">Node.js</h2>
+<h2 id="what-is-node-js-">What is node.js ?</h2>
+<p><a href="https://nodejs.org/en/docs/">Official Docs</a></p>
+<p>Well in 1-line, Node.js® is a JavaScript runtime built on Chrome&#39;s V8 JavaScript engine.</p>
+<p>Huh?</p>
+<p>Historically, JavaScript could be executed only in a web browser. Things changed in 2009 when node.js came into being. Using node.js we can execute JavaScript outside the browser environment.</p>
+<p>Go through the videos below to understand more about how it works.
+<a href="https://www.youtube.com/watch?v=uVwtVBpw7RQ&amp;feature=emb_imp_woyt">Part 1</a>
+<a href="https://www.youtube.com/watch?v=XUSHH0E-7zk&amp;feature=emb_imp_woyt">Part 2</a>
+<a href="https://www.youtube.com/watch?v=jOupHNvDIq8&amp;feature=emb_imp_woyt">Part 2</a></p>
+<h4 id="node-version-manager-nvm-">Node Version Manager (NVM)</h4>
+<p>It is a tool used to manage multiple active Node.js versions.</p>
+<p>The Node.js platform, Node.js ​community of tools, and Node.js libraries are fast-moving targets – what might work under one Node.js version is not guaranteed to work for another version of Node.js. Hence, users need ways to switch between multiple versions of Node.js</p>
+<p><strong>Why use NVM?</strong></p>
+<p>NVM allows users to:</p>
+<ul>
+<li>Locally download any of the remote Long Term Support (LTS) versions of Node.js with a simple command.</li>
+<li>Easily switch between multiple versions of Node.js, right from the command line.</li>
+<li>Set up aliases to switch between different downloaded versions of Node.js with ease.</li>
+</ul>
+<p><a href="https://github.com/nvm-sh/nvm">Learn more about nvm</a></p>
+<h4 id="npm-the-node-package-manager">npm - the node package manager</h4>
+<p><strong><em>npm</em></strong>, short for Node Package Manager (well, not really), is two things:</p>
+<ul>
+<li>it is an online repository for the publishing of open-source Node.js projects</li>
+<li>and, it is a command-line utility for interacting with said repository that aids in package installation, version management, and dependency management.</li>
+</ul>
+<p>A majority of Node.js libraries and applications are published on npm, and many more are added every day. These applications can be searched for on <a href="http://npmjs.org/">npmjs</a>. Once you have a package you want to install, it can be installed with a single CLI command.</p>
+<p>Let&#39;s say you&#39;re hard at work one day, developing the Next Great Application. You come across a problem, and you decide that it&#39;s time to use that cool library you keep hearing about - let&#39;s use Caolan McMahon&#39;s <strong>async</strong> as an example. Thankfully, <strong>npm</strong> is very simple to use: you only have to run <strong>npm install async</strong>, and the specified module will be installed in the current directory under <strong>./node_modules/</strong>. Once installed to your node_modules folder, you&#39;ll be able to use <strong>require()</strong> on them just like they were built-ins.</p>
+<p>Let&#39;s look at an example of a global install - let&#39;s say coffee-script. The npm command is simple: <strong>npm install coffee-script -g</strong>. This will typically install the program and put a symlink to it in <strong>/usr/local/bin/</strong>. This will then allow you to run the program from the console just like any other CLI tool. In this case, running coffee will now allow you to use the coffee-script REPL.</p>
+<p>Another important use of npm is dependency management. When you have a node project with a package.json file, you can run npm install from the project root and npm will install all the dependencies listed in the package.json. This makes installing a Node.js project from a git repo much easier! For example, <strong>vows</strong>, a Node.js testing framework, can be installed from git, and its single dependency, <strong>eyes</strong>, can be automatically handled:</p>
+<p>Example:</p>
+<pre><code class="lang-sh">git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/cloudhead/vows.git
+
+cd vows
+
+npm install
+</code></pre>
+<p>After running those commands, you will see a node_modules folder containing all of the project dependencies specified in the package.json.</p>
+<p><a href="https://www.youtube.com/watch?v=jHDhaSSKmB0&amp;feature=emb_imp_woyt">NPM crash course</a></p>

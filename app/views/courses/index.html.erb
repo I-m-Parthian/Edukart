@@ -1,4 +1,4 @@
-<h2>Courses</h2>
+<h2 class="my-3">Courses</h2>
   
 <div class="row row-cols-1 row-cols-md-3">
   <% @courses.each do |course| %>
@@ -9,13 +9,17 @@
             <h5 class="card-title"><%= course.course_name %></h5>
             <p class="card-text"><%= course.description %></p>
 
-            <%= link_to 'Show', course, class: "btn btn-outline-primary btn-block" %>
-            <%= link_to 'Edit', edit_course_path(course) %>
-            <%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% if current_user.role == "Mentor"  %>
+              <%= link_to 'View Course', course, class: "btn btn-outline-primary btn-block" %>
+              <div class="bg-dark d-flex justify-content-between mt-2 px-2">
+                <%= link_to 'Edit', edit_course_path(course), class: "text-left" %>
+                <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </div>
+            <% else  %>
+              <%= link_to 'Start Leaning', course, class: "btn btn-outline-primary btn-block" %>
+            <% end  %>
           </div>
         </div>
       </div>
     <% end  %>
 </div>
-
-<%= link_to 'New Course', new_course_path %>
