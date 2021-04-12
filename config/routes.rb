@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # path for home page
   root to: 'home#index'
 
+  # path to redirect to signup again in case of errors
   devise_scope :user do
   get '/users', to: 'devise/registrations#new'
   get '/users/password', to: 'devise/passwords#new'

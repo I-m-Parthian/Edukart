@@ -25,7 +25,7 @@
 
     <%# Block navbar and footer section for Login and signUp pages %>
     <% if controller_name == 'registrations' || controller_name == 'sessions' %>
-      <% if action_name != "new"  %>
+      <% if action_name != "new" && action_name != "create"  %>
         <%= render partial: "shared/navbar"  %>
       <% end  %>
     <% else  %>
@@ -39,7 +39,7 @@
     </div>
 
     <% if controller_name == 'registrations' || controller_name == 'sessions' %>
-      <% if action_name != "new"  %>
+      <% if action_name != "new" && action_name != "create"  %>
         <%= render partial: "shared/footer"  %>
       <% end  %>
     <% else  %>

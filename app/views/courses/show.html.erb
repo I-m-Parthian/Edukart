@@ -1,5 +1,7 @@
 <div class="row">
-  <%= image_tag @course.image_name, class: "image-show" %>
+   <% if  !@course.image_name.nil?%>
+    <%= image_tag @course.image_name, class: "image-show" %>
+  <% end  %>
 </div>
 <h1 class="text-center mt-5"><%= @course.course_name %></h1>
 
