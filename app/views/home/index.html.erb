@@ -2,6 +2,8 @@
     <%# Capitalising first letter %>
     <% if current_user.role == "Student"  %>
         <h2>Lets Start learning, <%= current_user.first_name.to_s.humanize %> </h2>
+    <% else  %>
+        <h2 class= "my-3">Featured Course</h2>
     <% end  %>
     <hr>
     <div class="row row-cols-1 row-cols-md-3">
